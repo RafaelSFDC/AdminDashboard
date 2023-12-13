@@ -25,7 +25,6 @@ app.use(morgan("common"))
 app.use(bodyParser.json())
 app.use(bodyParser.urlencoded({ extended: false }))
 app.use(cors())
-
 // ===============================================================
 // ROUTES
 // ===============================================================
@@ -33,7 +32,6 @@ app.use("client", clientRoutes)
 app.use("general", generalRoutes)
 app.use("management", manegementRoutes)
 app.use("sales", salesRoutes)
-
 // ===============================================================
 // MONGOOSE SETUP
 // ===============================================================
@@ -46,7 +44,6 @@ mongoose
     .catch((err) => {
         console.log(err)
     })
-
 // ===============================================================
 // SERVER
 // ===============================================================
